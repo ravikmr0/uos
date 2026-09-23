@@ -10,33 +10,310 @@
 
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as IndexRouteImport } from './routes/index'
+import { Route as AboutRouteImport } from './routes/about'
+import { Route as AboutStateRouteImport } from './routes/about-state'
+import { Route as AdmitCardRouteImport } from './routes/admit-card'
+import { Route as AffiliationRouteImport } from './routes/affiliation'
+import { Route as AiCentersRouteImport } from './routes/ai-centers'
+import { Route as BoardProfileRouteImport } from './routes/board-profile'
+import { Route as CalendarRouteImport } from './routes/calendar'
+import { Route as ContactRouteImport } from './routes/contact'
+import { Route as CoursesRouteImport } from './routes/courses'
+import { Route as DownloadsRouteImport } from './routes/downloads'
+import { Route as EligibilityRouteImport } from './routes/eligibility'
+import { Route as EnrollmentCardRouteImport } from './routes/enrollment-card'
+import { Route as FeeStructureRouteImport } from './routes/fee-structure'
+import { Route as LoginRouteImport } from './routes/login'
+import { Route as NoticesRouteImport } from './routes/notices'
+import { Route as OnlineDatabaseRouteImport } from './routes/online-database'
+import { Route as ResultsRouteImport } from './routes/results'
+import { Route as SchoolsRouteImport } from './routes/schools'
+import { Route as SitemapRouteImport } from './routes/sitemap'
+import { Route as StudyMaterialRouteImport } from './routes/study-material'
+import { Route as VocationalEducationRouteImport } from './routes/vocational-education'
 
 const IndexRoute = IndexRouteImport.update({
   id: '/',
   path: '/',
   getParentRoute: () => rootRouteImport,
 } as any)
+const AboutRoute = AboutRouteImport.update({
+  id: '/about',
+  path: '/about',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const AboutStateRoute = AboutStateRouteImport.update({
+  id: '/about-state',
+  path: '/about-state',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const AdmitCardRoute = AdmitCardRouteImport.update({
+  id: '/admit-card',
+  path: '/admit-card',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const AffiliationRoute = AffiliationRouteImport.update({
+  id: '/affiliation',
+  path: '/affiliation',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const AiCentersRoute = AiCentersRouteImport.update({
+  id: '/ai-centers',
+  path: '/ai-centers',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const BoardProfileRoute = BoardProfileRouteImport.update({
+  id: '/board-profile',
+  path: '/board-profile',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const CalendarRoute = CalendarRouteImport.update({
+  id: '/calendar',
+  path: '/calendar',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ContactRoute = ContactRouteImport.update({
+  id: '/contact',
+  path: '/contact',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const CoursesRoute = CoursesRouteImport.update({
+  id: '/courses',
+  path: '/courses',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const DownloadsRoute = DownloadsRouteImport.update({
+  id: '/downloads',
+  path: '/downloads',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const EligibilityRoute = EligibilityRouteImport.update({
+  id: '/eligibility',
+  path: '/eligibility',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const EnrollmentCardRoute = EnrollmentCardRouteImport.update({
+  id: '/enrollment-card',
+  path: '/enrollment-card',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const FeeStructureRoute = FeeStructureRouteImport.update({
+  id: '/fee-structure',
+  path: '/fee-structure',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const LoginRoute = LoginRouteImport.update({
+  id: '/login',
+  path: '/login',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const NoticesRoute = NoticesRouteImport.update({
+  id: '/notices',
+  path: '/notices',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const OnlineDatabaseRoute = OnlineDatabaseRouteImport.update({
+  id: '/online-database',
+  path: '/online-database',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ResultsRoute = ResultsRouteImport.update({
+  id: '/results',
+  path: '/results',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const SchoolsRoute = SchoolsRouteImport.update({
+  id: '/schools',
+  path: '/schools',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const SitemapRoute = SitemapRouteImport.update({
+  id: '/sitemap',
+  path: '/sitemap',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const StudyMaterialRoute = StudyMaterialRouteImport.update({
+  id: '/study-material',
+  path: '/study-material',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const VocationalEducationRoute = VocationalEducationRouteImport.update({
+  id: '/vocational-education',
+  path: '/vocational-education',
+  getParentRoute: () => rootRouteImport,
+} as any)
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
+  '/about': typeof AboutRoute
+  '/about-state': typeof AboutStateRoute
+  '/admit-card': typeof AdmitCardRoute
+  '/affiliation': typeof AffiliationRoute
+  '/ai-centers': typeof AiCentersRoute
+  '/board-profile': typeof BoardProfileRoute
+  '/calendar': typeof CalendarRoute
+  '/contact': typeof ContactRoute
+  '/courses': typeof CoursesRoute
+  '/downloads': typeof DownloadsRoute
+  '/eligibility': typeof EligibilityRoute
+  '/enrollment-card': typeof EnrollmentCardRoute
+  '/fee-structure': typeof FeeStructureRoute
+  '/login': typeof LoginRoute
+  '/notices': typeof NoticesRoute
+  '/online-database': typeof OnlineDatabaseRoute
+  '/results': typeof ResultsRoute
+  '/schools': typeof SchoolsRoute
+  '/sitemap': typeof SitemapRoute
+  '/study-material': typeof StudyMaterialRoute
+  '/vocational-education': typeof VocationalEducationRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
+  '/about': typeof AboutRoute
+  '/about-state': typeof AboutStateRoute
+  '/admit-card': typeof AdmitCardRoute
+  '/affiliation': typeof AffiliationRoute
+  '/ai-centers': typeof AiCentersRoute
+  '/board-profile': typeof BoardProfileRoute
+  '/calendar': typeof CalendarRoute
+  '/contact': typeof ContactRoute
+  '/courses': typeof CoursesRoute
+  '/downloads': typeof DownloadsRoute
+  '/eligibility': typeof EligibilityRoute
+  '/enrollment-card': typeof EnrollmentCardRoute
+  '/fee-structure': typeof FeeStructureRoute
+  '/login': typeof LoginRoute
+  '/notices': typeof NoticesRoute
+  '/online-database': typeof OnlineDatabaseRoute
+  '/results': typeof ResultsRoute
+  '/schools': typeof SchoolsRoute
+  '/sitemap': typeof SitemapRoute
+  '/study-material': typeof StudyMaterialRoute
+  '/vocational-education': typeof VocationalEducationRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
+  '/about': typeof AboutRoute
+  '/about-state': typeof AboutStateRoute
+  '/admit-card': typeof AdmitCardRoute
+  '/affiliation': typeof AffiliationRoute
+  '/ai-centers': typeof AiCentersRoute
+  '/board-profile': typeof BoardProfileRoute
+  '/calendar': typeof CalendarRoute
+  '/contact': typeof ContactRoute
+  '/courses': typeof CoursesRoute
+  '/downloads': typeof DownloadsRoute
+  '/eligibility': typeof EligibilityRoute
+  '/enrollment-card': typeof EnrollmentCardRoute
+  '/fee-structure': typeof FeeStructureRoute
+  '/login': typeof LoginRoute
+  '/notices': typeof NoticesRoute
+  '/online-database': typeof OnlineDatabaseRoute
+  '/results': typeof ResultsRoute
+  '/schools': typeof SchoolsRoute
+  '/sitemap': typeof SitemapRoute
+  '/study-material': typeof StudyMaterialRoute
+  '/vocational-education': typeof VocationalEducationRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/'
+  fullPaths:
+    | '/'
+    | '/about'
+    | '/about-state'
+    | '/admit-card'
+    | '/affiliation'
+    | '/ai-centers'
+    | '/board-profile'
+    | '/calendar'
+    | '/contact'
+    | '/courses'
+    | '/downloads'
+    | '/eligibility'
+    | '/enrollment-card'
+    | '/fee-structure'
+    | '/login'
+    | '/notices'
+    | '/online-database'
+    | '/results'
+    | '/schools'
+    | '/sitemap'
+    | '/study-material'
+    | '/vocational-education'
   fileRoutesByTo: FileRoutesByTo
-  to: '/'
-  id: '__root__' | '/'
+  to:
+    | '/'
+    | '/about'
+    | '/about-state'
+    | '/admit-card'
+    | '/affiliation'
+    | '/ai-centers'
+    | '/board-profile'
+    | '/calendar'
+    | '/contact'
+    | '/courses'
+    | '/downloads'
+    | '/eligibility'
+    | '/enrollment-card'
+    | '/fee-structure'
+    | '/login'
+    | '/notices'
+    | '/online-database'
+    | '/results'
+    | '/schools'
+    | '/sitemap'
+    | '/study-material'
+    | '/vocational-education'
+  id:
+    | '__root__'
+    | '/'
+    | '/about'
+    | '/about-state'
+    | '/admit-card'
+    | '/affiliation'
+    | '/ai-centers'
+    | '/board-profile'
+    | '/calendar'
+    | '/contact'
+    | '/courses'
+    | '/downloads'
+    | '/eligibility'
+    | '/enrollment-card'
+    | '/fee-structure'
+    | '/login'
+    | '/notices'
+    | '/online-database'
+    | '/results'
+    | '/schools'
+    | '/sitemap'
+    | '/study-material'
+    | '/vocational-education'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
+  AboutRoute: typeof AboutRoute
+  AboutStateRoute: typeof AboutStateRoute
+  AdmitCardRoute: typeof AdmitCardRoute
+  AffiliationRoute: typeof AffiliationRoute
+  AiCentersRoute: typeof AiCentersRoute
+  BoardProfileRoute: typeof BoardProfileRoute
+  CalendarRoute: typeof CalendarRoute
+  ContactRoute: typeof ContactRoute
+  CoursesRoute: typeof CoursesRoute
+  DownloadsRoute: typeof DownloadsRoute
+  EligibilityRoute: typeof EligibilityRoute
+  EnrollmentCardRoute: typeof EnrollmentCardRoute
+  FeeStructureRoute: typeof FeeStructureRoute
+  LoginRoute: typeof LoginRoute
+  NoticesRoute: typeof NoticesRoute
+  OnlineDatabaseRoute: typeof OnlineDatabaseRoute
+  ResultsRoute: typeof ResultsRoute
+  SchoolsRoute: typeof SchoolsRoute
+  SitemapRoute: typeof SitemapRoute
+  StudyMaterialRoute: typeof StudyMaterialRoute
+  VocationalEducationRoute: typeof VocationalEducationRoute
 }
 
 declare module '@tanstack/react-router' {
@@ -48,11 +325,179 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof IndexRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/about': {
+      id: '/about'
+      path: '/about'
+      fullPath: '/about'
+      preLoaderRoute: typeof AboutRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/about-state': {
+      id: '/about-state'
+      path: '/about-state'
+      fullPath: '/about-state'
+      preLoaderRoute: typeof AboutStateRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/admit-card': {
+      id: '/admit-card'
+      path: '/admit-card'
+      fullPath: '/admit-card'
+      preLoaderRoute: typeof AdmitCardRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/affiliation': {
+      id: '/affiliation'
+      path: '/affiliation'
+      fullPath: '/affiliation'
+      preLoaderRoute: typeof AffiliationRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/ai-centers': {
+      id: '/ai-centers'
+      path: '/ai-centers'
+      fullPath: '/ai-centers'
+      preLoaderRoute: typeof AiCentersRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/board-profile': {
+      id: '/board-profile'
+      path: '/board-profile'
+      fullPath: '/board-profile'
+      preLoaderRoute: typeof BoardProfileRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/calendar': {
+      id: '/calendar'
+      path: '/calendar'
+      fullPath: '/calendar'
+      preLoaderRoute: typeof CalendarRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/contact': {
+      id: '/contact'
+      path: '/contact'
+      fullPath: '/contact'
+      preLoaderRoute: typeof ContactRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/courses': {
+      id: '/courses'
+      path: '/courses'
+      fullPath: '/courses'
+      preLoaderRoute: typeof CoursesRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/downloads': {
+      id: '/downloads'
+      path: '/downloads'
+      fullPath: '/downloads'
+      preLoaderRoute: typeof DownloadsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/eligibility': {
+      id: '/eligibility'
+      path: '/eligibility'
+      fullPath: '/eligibility'
+      preLoaderRoute: typeof EligibilityRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/enrollment-card': {
+      id: '/enrollment-card'
+      path: '/enrollment-card'
+      fullPath: '/enrollment-card'
+      preLoaderRoute: typeof EnrollmentCardRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/fee-structure': {
+      id: '/fee-structure'
+      path: '/fee-structure'
+      fullPath: '/fee-structure'
+      preLoaderRoute: typeof FeeStructureRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/login': {
+      id: '/login'
+      path: '/login'
+      fullPath: '/login'
+      preLoaderRoute: typeof LoginRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/notices': {
+      id: '/notices'
+      path: '/notices'
+      fullPath: '/notices'
+      preLoaderRoute: typeof NoticesRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/online-database': {
+      id: '/online-database'
+      path: '/online-database'
+      fullPath: '/online-database'
+      preLoaderRoute: typeof OnlineDatabaseRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/results': {
+      id: '/results'
+      path: '/results'
+      fullPath: '/results'
+      preLoaderRoute: typeof ResultsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/schools': {
+      id: '/schools'
+      path: '/schools'
+      fullPath: '/schools'
+      preLoaderRoute: typeof SchoolsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/sitemap': {
+      id: '/sitemap'
+      path: '/sitemap'
+      fullPath: '/sitemap'
+      preLoaderRoute: typeof SitemapRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/study-material': {
+      id: '/study-material'
+      path: '/study-material'
+      fullPath: '/study-material'
+      preLoaderRoute: typeof StudyMaterialRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/vocational-education': {
+      id: '/vocational-education'
+      path: '/vocational-education'
+      fullPath: '/vocational-education'
+      preLoaderRoute: typeof VocationalEducationRouteImport
+      parentRoute: typeof rootRouteImport
+    }
   }
 }
 
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
+  AboutRoute: AboutRoute,
+  AboutStateRoute: AboutStateRoute,
+  AdmitCardRoute: AdmitCardRoute,
+  AffiliationRoute: AffiliationRoute,
+  AiCentersRoute: AiCentersRoute,
+  BoardProfileRoute: BoardProfileRoute,
+  CalendarRoute: CalendarRoute,
+  ContactRoute: ContactRoute,
+  CoursesRoute: CoursesRoute,
+  DownloadsRoute: DownloadsRoute,
+  EligibilityRoute: EligibilityRoute,
+  EnrollmentCardRoute: EnrollmentCardRoute,
+  FeeStructureRoute: FeeStructureRoute,
+  LoginRoute: LoginRoute,
+  NoticesRoute: NoticesRoute,
+  OnlineDatabaseRoute: OnlineDatabaseRoute,
+  ResultsRoute: ResultsRoute,
+  SchoolsRoute: SchoolsRoute,
+  SitemapRoute: SitemapRoute,
+  StudyMaterialRoute: StudyMaterialRoute,
+  VocationalEducationRoute: VocationalEducationRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
