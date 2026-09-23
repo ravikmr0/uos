@@ -1,6 +1,7 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { Link } from "@tanstack/react-router";
 import { BookOpen, BriefcaseBusiness, CircleCheck, GraduationCap, Layers3, ShieldCheck } from "lucide-react";
+import type { ReactNode } from "react";
 import { Button } from "@/components/ui/button";
 import { StudentLinks } from "@/components/uos/page-frame";
 import learnersImage from "@/assets/uos-learners.jpg";
@@ -38,4 +39,4 @@ function Index() {
   );
 }
 
-function Feature({icon,title,children}:{icon:React.ReactNode;title:string;children:React.ReactNode}) { return <article className="border-t-4 border-saffron bg-card p-6 shadow-sm"><span className="icon-box">{icon}</span><h3 className="mt-5 font-display text-xl font-bold text-primary">{title}</h3><p className="mt-3 text-sm leading-6 text-muted-foreground">{children}</p></article> }
+function Feature({icon,title,children}:{icon:ReactNode;title:string;children:ReactNode}) { return <article className="border-t-4 border-saffron bg-card p-6 shadow-sm"><span className="icon-box">{icon}</span><h3 className="mt-5 font-display text-xl font-bold text-primary">{title}</h3><p className="mt-3 text-sm leading-6 text-muted-foreground">{children}</p></article> }
