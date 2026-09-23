@@ -1,3 +1,4 @@
+import { Link } from "@tanstack/react-router";
 import type { ReactNode } from "react";
 
 export function PageFrame({ eyebrow, title, intro, children }: { eyebrow?: string; title: string; intro?: string; children: ReactNode }) {
@@ -30,9 +31,9 @@ export function StudentLinks() {
       <h2 id="student-section" className="bg-primary px-5 py-4 font-display text-lg font-bold text-primary-foreground">Student Section</h2>
       <nav className="divide-y divide-border" aria-label="Student services">
         {studentLinks.map(([label, href]) => (
-          <a key={href} href={href} className="flex min-h-12 items-center justify-between px-5 py-3 text-sm font-semibold text-foreground transition-colors hover:bg-muted hover:text-primary">
+          <Link key={href} to={href} className="flex min-h-12 items-center justify-between px-5 py-3 text-sm font-semibold text-foreground transition-colors hover:bg-muted hover:text-primary">
             {label}<span aria-hidden="true">›</span>
-          </a>
+          </Link>
         ))}
       </nav>
     </aside>
