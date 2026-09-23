@@ -28,6 +28,7 @@ import { Route as NoticesRouteImport } from './routes/notices'
 import { Route as OnlineDatabaseRouteImport } from './routes/online-database'
 import { Route as ResultsRouteImport } from './routes/results'
 import { Route as SchoolsRouteImport } from './routes/schools'
+import { Route as SitemapRouteImport } from './routes/sitemap'
 import { Route as StudyMaterialRouteImport } from './routes/study-material'
 import { Route as VocationalEducationRouteImport } from './routes/vocational-education'
 
@@ -126,6 +127,11 @@ const SchoolsRoute = SchoolsRouteImport.update({
   path: '/schools',
   getParentRoute: () => rootRouteImport,
 } as any)
+const SitemapRoute = SitemapRouteImport.update({
+  id: '/sitemap',
+  path: '/sitemap',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const StudyMaterialRoute = StudyMaterialRouteImport.update({
   id: '/study-material',
   path: '/study-material',
@@ -157,6 +163,7 @@ export interface FileRoutesByFullPath {
   '/online-database': typeof OnlineDatabaseRoute
   '/results': typeof ResultsRoute
   '/schools': typeof SchoolsRoute
+  '/sitemap': typeof SitemapRoute
   '/study-material': typeof StudyMaterialRoute
   '/vocational-education': typeof VocationalEducationRoute
 }
@@ -180,6 +187,7 @@ export interface FileRoutesByTo {
   '/online-database': typeof OnlineDatabaseRoute
   '/results': typeof ResultsRoute
   '/schools': typeof SchoolsRoute
+  '/sitemap': typeof SitemapRoute
   '/study-material': typeof StudyMaterialRoute
   '/vocational-education': typeof VocationalEducationRoute
 }
@@ -204,6 +212,7 @@ export interface FileRoutesById {
   '/online-database': typeof OnlineDatabaseRoute
   '/results': typeof ResultsRoute
   '/schools': typeof SchoolsRoute
+  '/sitemap': typeof SitemapRoute
   '/study-material': typeof StudyMaterialRoute
   '/vocational-education': typeof VocationalEducationRoute
 }
@@ -229,6 +238,7 @@ export interface FileRouteTypes {
     | '/online-database'
     | '/results'
     | '/schools'
+    | '/sitemap'
     | '/study-material'
     | '/vocational-education'
   fileRoutesByTo: FileRoutesByTo
@@ -252,6 +262,7 @@ export interface FileRouteTypes {
     | '/online-database'
     | '/results'
     | '/schools'
+    | '/sitemap'
     | '/study-material'
     | '/vocational-education'
   id:
@@ -275,6 +286,7 @@ export interface FileRouteTypes {
     | '/online-database'
     | '/results'
     | '/schools'
+    | '/sitemap'
     | '/study-material'
     | '/vocational-education'
   fileRoutesById: FileRoutesById
@@ -299,6 +311,7 @@ export interface RootRouteChildren {
   OnlineDatabaseRoute: typeof OnlineDatabaseRoute
   ResultsRoute: typeof ResultsRoute
   SchoolsRoute: typeof SchoolsRoute
+  SitemapRoute: typeof SitemapRoute
   StudyMaterialRoute: typeof StudyMaterialRoute
   VocationalEducationRoute: typeof VocationalEducationRoute
 }
@@ -438,6 +451,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof SchoolsRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/sitemap': {
+      id: '/sitemap'
+      path: '/sitemap'
+      fullPath: '/sitemap'
+      preLoaderRoute: typeof SitemapRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/study-material': {
       id: '/study-material'
       path: '/study-material'
@@ -475,6 +495,7 @@ const rootRouteChildren: RootRouteChildren = {
   OnlineDatabaseRoute: OnlineDatabaseRoute,
   ResultsRoute: ResultsRoute,
   SchoolsRoute: SchoolsRoute,
+  SitemapRoute: SitemapRoute,
   StudyMaterialRoute: StudyMaterialRoute,
   VocationalEducationRoute: VocationalEducationRoute,
 }
